@@ -20,4 +20,6 @@ class ImmobiliareitItem(scrapy.Item):
 	address = scrapy.Field()  # [x.strip() for x in response.xpath('//div[contains(@class,"indirizzo_")]/text()').extract()]
 	price = scrapy.Field()  # response.css('div.info_annuncio div.dettaglio_superficie strong::text').extract()
 	url = scrapy.Field()
-	# price re.match("\D*(\d+\.\d+)\.*",UNICODEPRICE).groups()
+	agency = scrapy.Field()	
+	rooms = scrapy.Field()
+

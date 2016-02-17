@@ -6,12 +6,12 @@ cleanUnicodePrice = re.compile("\D*(\d+\.\d+)\.*")
 
 
 # http://www.immobiliare.it/Lucca/case_in_vendita-Lucca.html?criterio=rilevanza&pag=1
-BASEQUERYPATH = "http://www.immobiliare.it/Roma/vendita_case-Roma.html?criterio=rilevanza&pag="
-startUrls = [BASEQUERYPATH+str(pageNumber) for pageNumber in range(1, 1200)]
+BASEQUERYPATH = "http://www.immobiliare.it/Bolzano/case_in_vendita-Bolzano.html?criterio=rilevanza&pag="
+startUrls = [BASEQUERYPATH+str(pageNumber) for pageNumber in range(1, 311)]
 
 
 class ImmobiliareSpider(scrapy.Spider):
-	name = "immobi"
+	name = "immobib"
 	allowed_domains = ["immobiliare.it"]
 	start_urls = startUrls
 
