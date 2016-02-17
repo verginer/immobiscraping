@@ -1,8 +1,13 @@
 *.json
 idea/
 .idea/
+<<<<<<< HEAD
 pygmalionche__/
 *.py[cod]
 *$py.class
 **/*.pyc
 
+=======
+ipynp*/
+**/*.pyc
+>>>>>>> 07bcf49bcd7802499ce7aab58c43b5e5ffb8ff8b
