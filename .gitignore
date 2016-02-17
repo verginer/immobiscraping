@@ -1,3 +1,8 @@
 *.json
 idea/
 .idea/
+pygmalionche__/
+*.py[cod]
+*$py.class
+**/*.pyc
+
