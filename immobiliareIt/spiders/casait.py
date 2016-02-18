@@ -7,7 +7,7 @@ cleanUnicodePrice = re.compile("\D*(\d+\.\d+)\.*")
 
 # http://www.immobiliare.it/Lucca/case_in_vendita-Lucca.html?criterio=rilevanza&pag=1
 BASEQUERYPATH = "http://www.casa.it/vendita-residenziale/in-mi%2c+lombardia/lista-"
-startUrls = [BASEQUERYPATH+str(pageNumber) for pageNumber in range(1, 2)]
+startUrls = [BASEQUERYPATH+str(pageNumber) for pageNumber in range(1, 202)]
 
 
 class ImmobiliareSpider(scrapy.Spider):
