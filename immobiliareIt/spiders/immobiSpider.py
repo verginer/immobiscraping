@@ -22,8 +22,7 @@ class ImmobiliareSpider(scrapy.Spider):
 
 	def parse_listing_contents(self, response):
 		item = ImmobiliareitItem()
-		item['listingID'] = response.xpath('//div[@id="details"]/table//tr/td[contains(text(), "ferimento")]/following::td[1]/text()').extract()
-		item['listingDate'] = response.xpath('//div[@id="details"]/table//tr/td[contains(text(), "Data")]/following::td[1]/text()').extract()
+		item['listingID'] = response.xpath('//div[@id="details"]/table//tr/td[contains(text(), "ferimento")]/following::td[1]/text()').extract() item['listingDate'] = response.xpath('//div[@id="details"]/table//tr/td[contains(text(), "Data")]/following::td[1]/text()').extract()
 		item['contract'] = response.xpath('//div[@id="details"]/table//tr/td[contains(text(), "Contratto:")]/following::td[1]/text()').extract()
 		item['area'] =  response.xpath('//div[@id="details"]/table//tr/td[contains(text(), "Superficie:")]/following::td[1]/text()').extract()
 		item['bathrooms'] = response.xpath('//div[@id="details"]/table//tr/td[contains(text(), "Bagni:")]/following::td[1]/text()').extract()
